@@ -13,8 +13,8 @@ function About() {
       <div className="tech-content">
         <div className="columns">
           <div className="column is-one-third">
-            <div className="column">
-              <h1>Currently Learning<span className="skills-text"></span></h1>
+            <div>
+              <h2>Currently Learning<span className="skills-text"></span></h2>
               <div className="columns is-mobile is-multiline">
                 {currentlyLearning.map(icon => (
                   <div key={icon} className="column is-5 tech-logo">
@@ -34,7 +34,7 @@ function About() {
           </div>
           <div>
             <div className="column">
-              <h1>Skills<span className="skills-text"></span></h1>
+              <h2>Skills<span className="skills-text"></span></h2>
               <div className="columns is-mobile is-multiline">
                 {technicalSkills.map(icon => (
                   <div key={icon} className="tech-logo">

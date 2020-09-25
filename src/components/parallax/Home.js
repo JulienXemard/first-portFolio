@@ -72,6 +72,8 @@ function Home() {
             <i className="icons devicon-slack-plain" style={{ display: 'block', marginLeft: '20%' }}></i>
             <i className="icons devicon-visualstudio-plain" style={{ display: 'block', marginLeft: '50%' }}></i>
             <i className="icons devicon-mongodb-plain" style={{ display: 'block', marginLeft: '75%' }}></i>
+            <i className="icons devicon-github-plain" style={{ display: 'block', marginLeft: '35%' }}></i>
+            <i className="icons devicon-git-plain" style={{ display: 'block', marginLeft: '8%' }}></i>
           </ParallaxLayer>
 
           <ParallaxLayer offset={0.9} speed={1} style={{ pointerEvents: 'none' }}>
