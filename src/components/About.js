@@ -22,9 +22,9 @@ function About() {
     ref.current.map(clearTimeout)
     ref.current = []
     set([])
-    ref.current.push(setTimeout(() => set(['Bonjour !', 'My Name is', 'Julien Xemard']), 2000))
+    ref.current.push(setTimeout(() => set(['Bonjour', 'My name is', 'Julien']), 2000))
     ref.current.push(setTimeout(() => set(['A Full Stack', 'Sofware Engineer']), 7000))
-    ref.current.push(setTimeout(() => set(['Julien Xemard', 'A Full Stack', 'Sofware Engineer']), 14000))
+    ref.current.push(setTimeout(() => set(['Julien Xemard', 'A Full Stack', 'Sofware Engineer']), 12000))
   }, [])
 
   useEffect(() => void reset(), [])

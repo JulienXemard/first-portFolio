@@ -1,0 +1,34 @@
+.tech{
+  color: rgb(9, 195, 246);
+  .column{
+    margin: 0 2vw;
+  }
+  .description{
+    border: 1px solid red;
+  }
+  .tech-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    svg{
+      margin: 20px 22px;
+    }
+  }
+  .icon-label{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 1em;
+    text-align: center;
+    margin-top: 5px;
+  }
+  h1{
+    color: white;
+    font-size: medium;
+    margin-bottom: 40px;
+  }
+
+  .tech-name {
+    color: white;
+  } 
+}

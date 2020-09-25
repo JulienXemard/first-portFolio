@@ -4,19 +4,20 @@ import { SvgIcon } from './Icons'
 
 const technicalSkills = ['Node.js', 'JavaScript', 'React.js', 'Python', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'Django', 'HTML', 'CSS', 'bulma', 'npm', 'Heroku', 'VScode']
 
-const currentlyLearning = ['TypeScript']
+const currentlyLearning = ['TypeScript', 'Netlify']
 
 function About() {
 
   return (
-    <section className="section about" id="about">
-      <div className="about-content">
+    <section className="section tech" id="tech">
+      <div className="tech-content">
         <div className="columns">
-          <div className="column is-one-third about-blurb">
-            <div>
-              <h2>Currently Learning <span className="blue-text">–</span></h2>
+          <div className="column is-one-third">
+            <div className="column">
+              <h1>Currently Learning<span className="skills-text"></span></h1>
+              <div className="columns is-mobile is-multiline">
                 {currentlyLearning.map(icon => (
-                  <div key={icon} className="column is-3 tech-logo">
+                  <div key={icon} className="column is-5 tech-logo">
                     <SvgIcon
                       width={66}
                       height={66}
@@ -25,14 +26,15 @@ function About() {
                       secondaryFill={'#ffffff'}
                       backgroundFill={'#242323'}
                     />
-                    <p className="">{icon}</p>
+                    <p className="tech-name">{icon}</p>
                   </div>
                 ))}
+              </div>
             </div>
           </div>
           <div>
             <div className="column">
-              <h1>Skills <span className="blue-text">–</span></h1>
+              <h1>Skills<span className="skills-text"></span></h1>
               <div className="columns is-mobile is-multiline">
                 {technicalSkills.map(icon => (
                   <div key={icon} className="tech-logo">
@@ -44,18 +46,17 @@ function About() {
                       secondaryFill={'#ffffff'}
                       backgroundFill={'#242323'}
                     />
-                    <p className="">{icon}</p>
+                    <p className="tech-name">{icon}</p>
                   </div>
                 ))}
               </div>
-
             </div>
           </div>
         </div>
       </div>
-
     </section>
   )
 }
 
 export default About
+
