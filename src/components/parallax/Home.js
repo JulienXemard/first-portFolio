@@ -64,7 +64,7 @@ function Home() {
             <i className="icons devicon-typescript-plain" style={{ display: 'block', marginLeft: '32%' }}></i>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={0.72} speed={3} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={0.72} speed={2.8} style={{ pointerEvents: 'none' }}>
             <i className="icons devicon-github-plain" style={{ display: 'block', marginLeft: '80%' }}></i>
             <i className="icons devicon-css3-plain" style={{ display: 'block', marginLeft: '5%' }}></i>
             <i className="icons devicon-nodejs-plain" style={{ display: 'block', marginLeft: '60%' }}></i>

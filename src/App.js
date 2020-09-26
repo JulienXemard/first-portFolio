@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Parallax} />
           <Route path='/about' component={About} />
-          <Route path='Technologies' component={Technologies} />
+          <Route path='/technologies' component={Technologies} />
           <Route path='/contact' component={Contact} />
         </Switch>
       </main>
