@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.bg {
+  align-items: flex-end;
+  position: absolute;
+  border-radius: 80px;
+  // top: 0;
+  // left: 0;
+  width: 25vw;
+  height: 25vh;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+}

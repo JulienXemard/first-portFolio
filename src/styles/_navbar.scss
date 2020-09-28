@@ -1,24 +1,36 @@
-nav{
-  max-width: 1440px;
-  .nav-box{
+nav {
+
+  .nav-box {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
-  a{
+
+  a {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
     text-decoration: none;
     color: #242323;
     margin: 35px;
   }
-  a:last-child{
+
+  a:last-child {
   border: 1px solid #242323;
   padding: 1px 25px;
   border-radius: 1.5rem;
   }
-  a:last-child:hover{
+
+  a:last-child:hover {
   border: 1px solid rgb(9, 195, 246);
   background-color: rgb(9, 195, 246);
   color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 768px){
+
+  nav {
+    display: none;
   }
 }

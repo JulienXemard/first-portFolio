@@ -1,7 +1,9 @@
 import React from 'react'
 import About from '../About'
 import Technologies from '../Technologies'
+import Project from '../Projects'
 import Contact from '../Contact'
+import Motion from '../parallax/Motion'
 
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 
@@ -26,8 +28,28 @@ function Home() {
 
         <ParallaxLayer offset={0.8} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }} />
 
-          <ParallaxLayer offset={0} speed={2} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={0} speed={2}>
             <About />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={0.89} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
+            <Technologies />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={1} speed={4}>
+            <Motion />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={1.26} speed={2} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
+            <Project />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={1.4} speed={2} style={{ backgroundColor: 'rgba(255, 255, 255, 1)' }}>
+            <Contact />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={1.6} speed={3}>
+            <span onClick={() => parallax.scrollTo(0)}>Click back Home</span>
           </ParallaxLayer>
 
           {/* <ParallaxLayer offset={0.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
@@ -74,18 +96,6 @@ function Home() {
             <i className="icons devicon-mongodb-plain" style={{ display: 'block', marginLeft: '75%' }}></i>
             <i className="icons devicon-github-plain" style={{ display: 'block', marginLeft: '35%' }}></i>
             <i className="icons devicon-git-plain" style={{ display: 'block', marginLeft: '8%' }}></i>
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={0.9} speed={1} style={{ pointerEvents: 'none' }}>
-            <Technologies /> 
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={1.2} speed={1} style={{ pointerEvents: 'none' }}>
-            <Contact />
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={1.5} speed={0.5}>
-            <span onClick={() => parallax.scrollTo(0)}>Click back Home</span>
           </ParallaxLayer>
         </Parallax>
       </>

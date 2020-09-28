@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useSpring, animated as a } from 'react-spring'
 import { SvgIcon } from './Icons'
 
+const technicalSkills = ['Node.js', 'JavaScript', 'React.js', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'trello', 'HTML', 'CSS', 'bulma', 'npm', 'Heroku', 'VScode']
 
-const technicalSkills = ['Node.js', 'JavaScript', 'React.js', 'Python', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'Django', 'HTML', 'CSS', 'bulma', 'npm', 'Heroku', 'VScode']
-
-const currentlyLearning = ['TypeScript', 'Netlify']
+const currentlyLearning = ['Python', 'Django', 'TypeScript', 'Netlify']
 
 function About() {
+
+  const [flipped, set] = useState(false)
+
+  const { transform, opacity } = useSpring({
+    opacity: flipped ? 1 : 0,
+    transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+    config: { mass: 5, tension: 500, friction: 80 }
+  })
 
   return (
     <section className="section tech" id="tech">
@@ -30,13 +38,13 @@ function About() {
                   </div>
                 ))}
               </div>
-              <br /><br /><br /><br />
+              <br /><br />
               <div className="intro-me">
               {/* <h2>About <span className="about">Me</span></h2> */}
-              <h3><span className="hook-text">Entrepreneur prior</span><br />Sofware Engineering.</h3><br />
+              <h3><span className="hook-text">"Entrepreneur prior</span><br />Sofware Engineering."</h3><br />
               <p>Over the past 10 years, I evolved from Mid to Top <span className="hook-text">Management</span> positions until the creation of my own firm within the Retail industry. This experience allowed me to <span className="hook-text">develop</span> my abilities to set up the operational & financial clusters required to operate an SME.</p><br />
               <p>Fascinated by the digital impact in the Retail Industry amongst other subjects such as Neuralink, machine learning & AR, I joined GA to become a <span className="hook-text">Software Engineer.</span> This reconversion allows me to express my creativity & problem solving skills within an industry that will inevitably <span className="hook-text">shape the future.</span></p><br />
-              <p>Determined learner, objectives driven and eager for <span className="hook-text">opportunities</span>, I'm looking to join a team where I can learn and <span className="hook-text">develop my abilities</span>, whilst contributing to the company's success on various projects.</p><br />
+              <p>Determined learner, objectives driven and eager for <span className="hook-text">opportunities</span>, I'm looking to join a team where I can learn and <span className="hook-text">develop my abilities</span>, whilst contributing to the company's success.</p><br />
             </div>
             </div>
           </div>
@@ -57,6 +65,10 @@ function About() {
                     <p className="tech-name">{icon}</p>
                   </div>
                 ))}
+              </div>
+              <div className="tech-logo is-mobile flip-card" onMouseOver={() => set(state => !state)}>
+                <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
+                <a.div class="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
               </div>
             </div>
           </div>
