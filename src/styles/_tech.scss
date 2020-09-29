@@ -1,6 +1,6 @@
 .tech {
   background-color: black;
-  color: rgb(9, 195, 246);
+  color: #41b4d3;
 
   .column {
     margin: 0 2vw;
@@ -19,36 +19,65 @@
       margin: 20px 22px;
     }
   }
+
+  .projects {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu,
+      roboto, noto, segoe ui, arial, sans-serif;
+    background: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+  }
+
+  .container-cards {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    // background: #040404;
+  }
+
+  .card-one, .card-two,
+  .card-three, .card-four {
+    align-items: center;
+    margin-top: 70px;
+    width: 40ch;
+    height: 30ch;
+    background: rgb(9, 195, 246);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 2px solid #41b4d3;
+  }
+
+  .card-one {
+    background-image: url(https://i.imgur.com/igBoS9J.png);
+  }
+  .card-two {
+    background-image: url(https://i.imgur.com/5vMcxJy.png);
+  }
+  .card-three {
+    background-image: url(https://i.imgur.com/HtW4uzn.png);
+  }
+  .card-four {
+    background-image: url(https://i.imgur.com/74PLm0e.png);
+  }
+
+  .card:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
   .icon-label {
     width: 100%;
     border: 1px solid white;
     border-radius: 1em;
     text-align: center;
     margin-top: 5px;
-  }
-
-  .c {
-    position: absolute;
-    // background-position: center;
-    background-size: cover;
-    margin: 10px;
-    width: 50%;
-    height: 50%;
-    cursor: pointer;
-    will-change: transform, opacity;
-  }
-
-  .front,
-  .back {
-    background-size: cover;
-  }
-
-  .back {
-    background-image: url(https://i.imgur.com/plD3syj.png);
-  }
-
-  .front {
-    background-image: url(https://i.imgur.com/UMFrQ4F.png);
   }
 
   h2 {
@@ -68,7 +97,7 @@
   } 
 
   .hook-text {
-    color: rgb(9, 195, 246);
+    color: #41b4d3;
   }
 
   p {

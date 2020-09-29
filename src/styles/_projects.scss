@@ -1,0 +1,29 @@
+.project-section {
+
+  background-color: #000000;
+
+  .c {
+    position: absolute;
+    // background-position: center;
+    background-size: cover;
+    margin: 10px;
+    width: 30%;
+    height: 35%;
+    cursor: pointer;
+    will-change: transform, opacity;
+  }
+
+  .front,
+  .back {
+    background-size: cover;
+  }
+
+  .back {
+    background-image: url(https://i.imgur.com/plD3syj.png);
+  }
+
+  .front {
+    background-image: url(https://i.imgur.com/UMFrQ4F.png);
+  }
+
+}

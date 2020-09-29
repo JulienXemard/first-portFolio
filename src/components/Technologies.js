@@ -1,20 +1,18 @@
-import React, { useState } from 'react'
-import { useSpring, animated as a } from 'react-spring'
+import React from 'react'
+import { useSpring, animated } from 'react-spring'
 import { SvgIcon } from './Icons'
+import '../styles/main.scss'
 
 const technicalSkills = ['Node.js', 'JavaScript', 'React.js', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'trello', 'HTML', 'CSS', 'bulma', 'npm', 'Heroku', 'VScode']
 
 const currentlyLearning = ['Python', 'Django', 'TypeScript', 'Netlify']
 
+const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
+const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+
 function About() {
 
-  const [flipped, set] = useState(false)
-
-  const { transform, opacity } = useSpring({
-    opacity: flipped ? 1 : 0,
-    transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
-    config: { mass: 5, tension: 500, friction: 80 }
-  })
+  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
 
   return (
     <section className="section tech" id="tech">
@@ -66,9 +64,33 @@ function About() {
                   </div>
                 ))}
               </div>
-              <div className="tech-logo is-mobile flip-card" onMouseOver={() => set(state => !state)}>
-                <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
-                <a.div class="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+              <div className="columns is-mobile is-multiline projects container-cards">
+                <animated.div
+                  className="card-one url1"
+                  onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                  onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                  style={{ transform: props.xys.interpolate(trans) }}
+                />
+                <animated.div
+                  className="card-two url2"
+                  onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                  onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                  style={{ transform: props.xys.interpolate(trans) }}
+                />
+              </div>
+                <div className="columns is-mobile is-multiline projects container-cards">
+                <animated.div
+                  className="card-three"
+                  onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                  onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                  style={{ transform: props.xys.interpolate(trans) }}
+                />
+                <animated.div
+                  className="card-four"
+                  onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                  onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                  style={{ transform: props.xys.interpolate(trans) }}
+                />
               </div>
             </div>
           </div>

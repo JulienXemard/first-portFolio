@@ -4,6 +4,7 @@ import Technologies from '../Technologies'
 import Project from '../Projects'
 import Contact from '../Contact'
 import Motion from '../parallax/Motion'
+import Alive from './Alive'
 
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 
@@ -36,25 +37,29 @@ function Home() {
             <Technologies />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1} speed={4}>
+          {/* <ParallaxLayer offset={1} speed={4}>
             <Motion />
+          </ParallaxLayer> */}
+
+          <ParallaxLayer offset={1.05} speed={4}>
+            <Alive />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.26} speed={2} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
+          <ParallaxLayer offset={1.05} speed={4} style={{ pointerEvents: 'none' }}>
+            <img src='https://i.ibb.co/qJ32QpS/GALogo.png' style={{ width: '12%', marginLeft: '45%' }} />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={1.26} speed={2}>
             <Project />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.4} speed={2} style={{ backgroundColor: 'rgba(255, 255, 255, 1)' }}>
+          <ParallaxLayer offset={1.9} speed={2}>
             <Contact />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.6} speed={3}>
+          <ParallaxLayer offset={2} speed={3}>
             <span onClick={() => parallax.scrollTo(0)}>Click back Home</span>
           </ParallaxLayer>
-
-          {/* <ParallaxLayer offset={0.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-            <img src='https://i.ibb.co/qJ32QpS/GALogo.png' style={{ width: '10%', marginLeft: '70%' }} />
-          </ParallaxLayer> */}
 
           <ParallaxLayer offset={0.05} speed={3} style={{ pointerEvents: 'none' }}>
             <i className="icons devicon-github-plain" style={{ display: 'block', marginLeft: '35%' }}></i>
