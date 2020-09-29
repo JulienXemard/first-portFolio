@@ -1,29 +1,18 @@
-.project-section {
+#tech {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 
-  background-color: #000000;
-
-  .c {
-    position: absolute;
-    // background-position: center;
-    background-size: cover;
-    margin: 10px;
-    width: 30%;
-    height: 35%;
-    cursor: pointer;
-    will-change: transform, opacity;
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .front,
-  .back {
-    background-size: cover;
-  }
-
-  .back {
-    background-image: url(https://i.imgur.com/plD3syj.png);
-  }
-
-  .front {
-    background-image: url(https://i.imgur.com/UMFrQ4F.png);
+  .link-icon, .GH-icon {
+    color: white;
   }
 
 }
+

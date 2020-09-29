@@ -25,7 +25,7 @@ function Home() {
 
     return (
       <>
-        <Parallax pages={2} ref={ref => (parallax = ref)}>
+        <Parallax pages={2.5} ref={ref => (parallax = ref)}>
 
         <ParallaxLayer offset={0.8} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }} />
 
@@ -41,23 +41,23 @@ function Home() {
             <Motion />
           </ParallaxLayer> */}
 
-          <ParallaxLayer offset={1.05} speed={4}>
+          <ParallaxLayer offset={1} speed={3}>
             <Alive />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.05} speed={4} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={1.05} speed={3} style={{ pointerEvents: 'none' }}>
             <img src='https://i.ibb.co/qJ32QpS/GALogo.png' style={{ width: '12%', marginLeft: '45%' }} />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.26} speed={2}>
+          <ParallaxLayer offset={1.5} speed={1}>
             <Project />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.9} speed={2}>
+          <ParallaxLayer offset={2} speed={1}>
             <Contact />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2} speed={3}>
+          <ParallaxLayer offset={2.2} speed={1}>
             <span onClick={() => parallax.scrollTo(0)}>Click back Home</span>
           </ParallaxLayer>
 
