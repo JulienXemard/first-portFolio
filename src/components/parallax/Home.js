@@ -2,13 +2,10 @@ import React from 'react'
 import About from '../About'
 import Technologies from '../Technologies'
 import Project from '../Projects'
-import Contact from '../Contact'
-import Motion from '../parallax/Motion'
 import Alive from './Alive'
+import '../../styles/main.scss'
 
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
-
-
 import { makeStyles } from '@material-ui/core/styles'
 import { IconButton } from '@material-ui/core'
 
@@ -25,7 +22,15 @@ function Home() {
 
     return (
       <>
-        <Parallax pages={2.5} ref={ref => (parallax = ref)}>
+        <Parallax pages={2.4} ref={ref => (parallax = ref)}>
+
+        <nav>
+          <div className="nav-box">
+            <a onClick={() => parallax.scrollTo(0.45)}><h3>Technologies</h3></a>
+            <a onClick={() => parallax.scrollTo(1.25)}><h3>Projects</h3></a>
+            <a onClick={() => parallax.scrollTo(0)}><h3>Contact</h3></a>
+          </div>
+        </nav>
 
         <ParallaxLayer offset={0.8} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }} />
 
@@ -36,10 +41,6 @@ function Home() {
           <ParallaxLayer offset={0.88} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
             <Technologies />
           </ParallaxLayer>
-
-          {/* <ParallaxLayer offset={1} speed={4}>
-            <Motion />
-          </ParallaxLayer> */}
 
           <ParallaxLayer offset={1} speed={3}>
             <Alive />
@@ -53,11 +54,7 @@ function Home() {
             <Project />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2} speed={1}>
-            <Contact />
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={2.2} speed={1}>
+          <ParallaxLayer offset={2.2} speed={3}>
             <span onClick={() => parallax.scrollTo(0)}>Click back Home</span>
           </ParallaxLayer>
 
