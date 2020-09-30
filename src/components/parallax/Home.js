@@ -33,7 +33,7 @@ function Home() {
             <About />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={0.89} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
+          <ParallaxLayer offset={0.88} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
             <Technologies />
           </ParallaxLayer>
 
@@ -49,7 +49,7 @@ function Home() {
             <img src='https://i.ibb.co/qJ32QpS/GALogo.png' style={{ width: '12%', marginLeft: '45%' }} />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.5} speed={1}>
+          <ParallaxLayer offset={1.4} speed={1}>
             <Project />
           </ParallaxLayer>
 

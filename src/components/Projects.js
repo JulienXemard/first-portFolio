@@ -20,7 +20,6 @@ import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import '../styles/main.scss'
 
-// const technicalSkills = ['Node.js', 'JavaScript', 'React.js', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'trello', 'HTML', 'CSS', 'bulma', 'npm', 'Heroku', 'VScode']
 
 const gameProject = ['JavaScript', 'GitHub', 'HTML', 'CSS', 'Heroku', 'VScode', 'trello']
 const gameProject2 = ['Node.js', 'JavaScript', 'React.js', 'HTML', 'CSS', 'bulma', 'npm', 'VScode']
@@ -28,24 +27,32 @@ const gameProject3 = ['JavaScript', 'React.js', 'MongoDB', 'Node.js', 'Git', 'HT
 const gameProject4 = ['Python', 'Django', 'Node.js', 'JavaScript', 'React.js', 'Git', 'trello', 'VScode', 'Heroku']
 
 
-
 function About() {
 
   const useStyles = makeStyles((theme) => ({
     root: {
+      color: 'white',
+      fontFamily: 'Nunito',
       maxWidth: 345,
       backgroundColor: 'black',
+      borderBlockStyle: '1px',
       borderColor: '#41b4d3'
     },
 
-    Typography: {
+    subtext: {
+      color: '#41b4d3',
+      fontFamily: 'Nunito'
+    },
+
+    typography: {
+      color: 'white',
       fontFamily: 'Nunito',
     },
 
     media: {
-      fontColor: '#41b4d3',
+      color: '#41b4d3',
       height: 0,
-      paddingTop: '56.25%', // 16:9
+      paddingTop: '90%',
     },
 
     expand: {
@@ -84,8 +91,9 @@ function About() {
               1
             </Avatar>
           }
-          title="Shrimp and Chorizo Paella"
-          subheader="September 14, 2016"
+          title="Project | X-Wing"
+          subheaderTypographyProps={{ color:"white" }}
+          subheader="July 25th, 2020"
         />
         <CardMedia
           className={classes.media}
@@ -129,7 +137,9 @@ function About() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
-          Created a 2D|3D game within 7 days. Restricted to vanilla JS (no canvas).<br /><br /> It was interesting, yet incredibly challenging, to come up with original solutions to implement AR along 2D.<br /><br /> This first coding experience gave me a good understanding of what developers are dealing with in reality.
+            The game offers the user an immersive Star Wars shooting experience which includes a AR space wrap.
+            An exciting <span className="hook-text">first coding experience</span> that gave me a good understanding of what developers are dealing with in reality! The <span className="hook-text">logical challenges</span> & frustrations that lead to incredible mental sastifactions once solved <span className="hook-text">converted me.</span><br /><br />
+            The brief allowed for <span className="hook-text">7 days to create a game</span>, strictly restricted to <span className="hook-text">vanilla JS</span> (no canvas), HTML & CSS. It was interesting yet incredibly challenging to come up with solutions to <span className="hook-text">implement 3D along with 2D.</span><br /><br /> This project opened my eyes on the <span className="hook-text">programming community</span> & the ressources available to <span className="hook-text">help you grow.</span>
           </Typography>
           </CardContent>
         </Collapse>
@@ -141,13 +151,14 @@ function About() {
               2
             </Avatar>
           }
-          title="Shrimp and Chorizo Paella"
-          subheader="September 14, 2016"
+          title="Hackathon | APPi"
+          subheaderTypographyProps={{ color:"white" }}
+          subheader="August 13th, 2020"
         />
         <CardMedia
           className={classes.media}
           image="https://i.imgur.com/AtbKZVD.png"
-          title="Individual Game Project"
+          title="API React Project"
         />
         <CardContent>
           <div className="logo-container">
@@ -186,8 +197,12 @@ function About() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
-          48h to create a ReactJS website using third party APIs. An ambitious first React project as we linked our App to 3 APIs which was an incredible team effort and an excellent technical learning curve.<br /><br />
-          This Hackathon required a meticulous preparation, redistribution of tasks and pair coding efficiency.<br /><br />Brenda Ty, my coding partner, had not only a similar working ethic but also a temperament that made this Hackathon... interesting.
+            The brief was 'simple': <span className="hook-text">Group of 2 & 48h</span> to create a ReactJS website using third party APIs. The App gives users all bike locations around is gealocation as well as weather & polution metrics.
+            An ambitious first <span className="hook-text">ReactJS</span> project as we linked our App to <span className="hook-text">4 APIs</span> which was an incredible team effort & an excellent <span className="hook-text">technical learning curve</span> given our experience & the timeframe<br /><br />
+            This <span className="hook-text">Hackathon</span> required a meticulous preparation in order to efficiently redistribute the tasks. 
+            This project gave an excellent introduction to <span className="hook-text">pair coding</span> & the necessity to communicate around clear deadlines to reach the project objectives.<br /><br />
+            Fortunately I met Brenda Ty, who has similar <span className="hook-text">working ethics</span> along with a crazy mentallity which positively spiced up this Hackathon.
+            The <span className="hook-text">logical challenges</span> aren't meant to be negative nor boring situations. It was up to us to transform these difficult moment into meliorative & fun ones which impacted our <span className="hook-text">productivity positively.</span>
           </Typography>
           </CardContent>
         </Collapse>
@@ -199,13 +214,14 @@ function About() {
               3
             </Avatar>
           }
-          title="Shrimp and Chorizo Paella"
-          subheader="September 14, 2016"
+          title="Full Stack | Nalu"
+          subheaderTypographyProps={{ color:"white" }}
+          subheader="August 28th, 2020"
         />
         <CardMedia
           className={classes.media}
           image="https://i.imgur.com/TwGF1iI.png"
-          title="Individual Game Project"
+          title="React Mongo Project"
         />
         <CardContent>
           <div className="logo-container">
@@ -244,7 +260,8 @@ function About() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
-          Created a 2D|3D game within 7 days. Restricted to vanilla JS (no canvas). It was interesting, yet incredibly challenging, to come up with original solutions to implement AR along 2D.<br /> This first coding experience gave me a good understanding of what developers are dealing with in reality.
+            A first <span className="hook-text">Full Stack</span> group project (4p). Nalu allows users to find all the best <span className="hook-text">surf spots</span> around the world with their <span className="hook-text">current weather & tidal information</span> (APIs). The brief provisionned for 7 days to create a <span className="hook-text">ReactJS Client</span> front along with a <span className="hook-text">MongoDB</span> as a Backend.<br /><br />A real life team experience using <span className="hook-text">Git (Main | Development | Branches)</span> that required a meticulous wireframe preparation & tasks redistribution. My previous experiences allowed me to lead this project to its objectives which raised <span className="hook-text">interesting challenges.</span><br /><br />
+            The use of Trello & the daily <span className="hook-text">Stand Up meetings</span> were essential to track the progression of tasks & <span className="hook-text">objectives acheivements.</span> Our inexperience was compensated by excellent communication & <span className="hook-text">group solutions</span> whenever a pair or individual was in difficulty.<br /><br />This intense project was a <span className="hook-text">good reality check</span> which seriously tested our coding abilities in a sharing environment. It surely <span className="hook-text">enhanced my debugging abilities!</span>
           </Typography>
           </CardContent>
         </Collapse>
@@ -256,13 +273,14 @@ function About() {
               4
             </Avatar>
           }
-          title="Shrimp and Chorizo Paella"
-          subheader="September 14, 2016"
+          title="Full Stack | APPerture"
+          subheaderTypographyProps={{ color:"white" }}
+          subheader="September 17th, 2020"
         />
         <CardMedia
           className={classes.media}
           image="https://i.imgur.com/UMFrQ4F.png"
-          title="Individual Game Project"
+          title="Final Project"
         />
         <CardContent>
           <div className="logo-container">
@@ -301,7 +319,12 @@ function About() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
-          Created a 2D|3D game within 7 days. Restricted to vanilla JS (no canvas). It was interesting, yet incredibly challenging, to come up with original solutions to implement AR along 2D.<br /> This first coding experience gave me a good understanding of what developers are dealing with in reality.
+            A <span className="hook-text">Full Stack</span> Project created in 7 days using <span className="hook-text">ReactJs</span> along with <span className="hook-text">Python & Django</span> Rest Framework.
+            We had the choice to either do it individually or in group. Brenda Ty & I decided to grow our <span className="hook-text">pair coding</span> abilities in order to be exposed to the <span className="hook-text">market requriements.</span>
+            <br /><br />We also agreed to push ourselves using <span className="hook-text">React Hooks</span> which was conditional along with <span className="hook-text">Material UI.</span> With no previous experience or knowledge, we also decided to use <span className="hook-text">React-Spring</span> to render some <span className="hook-text">parallax</span> effects.
+            Factorising it all to our project was such a challenge yet an <span className="hook-text">excellent learning curve.</span>
+            <br /><br />The mental satisfaction to <span className="hook-text">use technologies</span> we never used before was increadly <span className="hook-text">rewarding</span> for us & our <span className="hook-text">final product.</span> 
+            <span className="hook-text">APPerture</span> has been inspired by Instagram. Our application allows users to <span className="hook-text">created a profile and post</span> monochrome photographes. We created a one to many as well as many to many <span className="hook-text">relatioships</span> as the users have the abilities to <span className="hook-text">follow</span> each others, <span className="hook-text">leave comments & like.</span>
           </Typography>
           </CardContent>
         </Collapse>
