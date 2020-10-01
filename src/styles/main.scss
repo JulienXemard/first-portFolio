@@ -30,6 +30,18 @@ $font-family: 'Nunito', serif;
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1366px) {
+  .alive-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-logo-mid {
+    display: none;
+  }
+}
+
 @import './navbar';
 @import './icons';
 @import './about';

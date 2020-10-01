@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring'
 import { SvgIcon } from './Icons'
 import { makeStyles } from '@material-ui/core/styles'
@@ -150,7 +150,7 @@ function About() {
               </Avatar>
             }
             title="Project | X-Wing"
-            subheaderTypographyProps={{ color:"white" }}
+            subheaderTypographyProps={{ color:'white' }}
             subheader="July 25th, 2020"
           />
           <CardMedia id="pOne"
@@ -159,18 +159,18 @@ function About() {
           />
           <CardContent>
             <div className="logo-container">
-            {gameProject.map(icon => (
-              <div key={icon} className="tech-logo">
-                <SvgIcon
-                  width={22}
-                  height={22}
-                  icon={icon}
-                  primaryFill={'#41b4d3'}
-                  secondaryFill={'#ffffff'}
-                  backgroundFill={'#242323'}
-                />
-              </div>
-            ))}
+              {gameProject.map(icon => (
+                <div key={icon} className="tech-logo">
+                  <SvgIcon
+                    width={22}
+                    height={22}
+                    icon={icon}
+                    primaryFill={'#41b4d3'}
+                    secondaryFill={'#ffffff'}
+                    backgroundFill={'#242323'}
+                  />
+                </div>
+              ))}
             </div>
           </CardContent>
           <CardActions disableSpacing>
@@ -198,11 +198,11 @@ function About() {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
+              <Typography variant="body2" color="textSecondary" component="p">
               The game offers the user an immersive Star Wars shooting experience which includes a AR space wrap.
               An exciting <span className="hook-text">first coding experience</span> that gave me a good understanding of what developers are dealing with in reality! The <span className="hook-text">logical challenges</span> & frustrations that lead to incredible mental sastifactions once solved <span className="hook-text">converted me.</span><br /><br />
               The brief allowed for <span className="hook-text">7 days to create a game</span>, strictly restricted to <span className="hook-text">vanilla JS</span> (no canvas), HTML & CSS. It was interesting yet incredibly challenging to come up with solutions to <span className="hook-text">implement 3D along with 2D.</span><br /><br /> This project opened my eyes on the <span className="hook-text">programming community</span> & the ressources available to <span className="hook-text">help you grow.</span>
-            </Typography>
+              </Typography>
             </CardContent>
           </Collapse>
         </Card>
@@ -214,7 +214,7 @@ function About() {
               </Avatar>
             }
             title="Hackathon | APPi"
-            subheaderTypographyProps={{ color:"white" }}
+            subheaderTypographyProps={{ color:'white' }}
             subheader="August 13th, 2020"
           />
           <CardMedia id="pTwo"
@@ -223,18 +223,18 @@ function About() {
           />
           <CardContent>
             <div className="logo-container">
-            {gameProject2.map(icon => (
-              <div key={icon} className="tech-logo">
-                <SvgIcon
-                  width={22}
-                  height={22}
-                  icon={icon}
-                  primaryFill={'#41b4d3'}
-                  secondaryFill={'#ffffff'}
-                  backgroundFill={'#242323'}
-                />
-              </div>
-            ))}
+              {gameProject2.map(icon => (
+                <div key={icon} className="tech-logo">
+                  <SvgIcon
+                    width={22}
+                    height={22}
+                    icon={icon}
+                    primaryFill={'#41b4d3'}
+                    secondaryFill={'#ffffff'}
+                    backgroundFill={'#242323'}
+                  />
+                </div>
+              ))}
             </div>
           </CardContent>
           <CardActions disableSpacing>
@@ -262,14 +262,14 @@ function About() {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
+              <Typography variant="body2" color="textSecondary" component="p">
               The brief was 'simple': <span className="hook-text">Group of 2 & 48h</span> to create a ReactJS website using third party APIs. The App gives users all bike locations around is gealocation as well as weather & polution metrics.
               An ambitious first <span className="hook-text">ReactJS</span> project as we linked our App to <span className="hook-text">4 APIs</span> which was an incredible team effort & an excellent <span className="hook-text">technical learning curve</span> given our experience & the timeframe<br /><br />
               This <span className="hook-text">Hackathon</span> required a meticulous preparation in order to efficiently redistribute the tasks. 
               This project gave an excellent introduction to <span className="hook-text">pair coding</span> & the necessity to communicate around clear deadlines to reach the project objectives.<br /><br />
               Fortunately I met Brenda Ty, who has similar <span className="hook-text">working ethics</span> along with a crazy mentallity which positively spiced up this Hackathon.
               The <span className="hook-text">logical challenges</span> aren't meant to be negative nor boring situations. It was up to us to transform these difficult moment into meliorative & fun ones which impacted our <span className="hook-text">productivity positively.</span>
-            </Typography>
+              </Typography>
             </CardContent>
           </Collapse>
         </Card>
@@ -281,7 +281,7 @@ function About() {
               </Avatar>
             }
             title="Full Stack | Nalu"
-            subheaderTypographyProps={{ color:"white" }}
+            subheaderTypographyProps={{ color:'white' }}
             subheader="August 28th, 2020"
           />
           <CardMedia id="pThree"
@@ -290,18 +290,18 @@ function About() {
           />
           <CardContent>
             <div className="logo-container">
-            {gameProject3.map(icon => (
-              <div key={icon} className="tech-logo">
-                <SvgIcon
-                  width={22}
-                  height={22}
-                  icon={icon}
-                  primaryFill={'#41b4d3'}
-                  secondaryFill={'#ffffff'}
-                  backgroundFill={'#242323'}
-                />
-              </div>
-            ))}
+              {gameProject3.map(icon => (
+                <div key={icon} className="tech-logo">
+                  <SvgIcon
+                    width={22}
+                    height={22}
+                    icon={icon}
+                    primaryFill={'#41b4d3'}
+                    secondaryFill={'#ffffff'}
+                    backgroundFill={'#242323'}
+                  />
+                </div>
+              ))}
             </div>
           </CardContent>
           <CardActions disableSpacing>
@@ -329,10 +329,10 @@ function About() {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
+              <Typography variant="body2" color="textSecondary" component="p">
               A first <span className="hook-text">Full Stack</span> group project (4p). Nalu allows users to find all the best <span className="hook-text">surf spots</span> around the world with their <span className="hook-text">current weather & tidal information</span> (APIs). The brief provisionned for 7 days to create a <span className="hook-text">ReactJS Client</span> front along with a <span className="hook-text">MongoDB</span> as a Backend.<br /><br />A real life team experience using <span className="hook-text">Git (Main | Development | Branches)</span> that required a meticulous wireframe preparation & tasks redistribution. My previous experiences allowed me to lead this project to its objectives which raised <span className="hook-text">interesting challenges.</span><br /><br />
               The use of Trello & the daily <span className="hook-text">Stand Up meetings</span> were essential to track the progression of tasks & <span className="hook-text">objectives acheivements.</span> Our inexperience was compensated by excellent communication & <span className="hook-text">group solutions</span> whenever a pair or individual was in difficulty.<br /><br />This intense project was a <span className="hook-text">good reality check</span> which seriously tested our coding abilities in a sharing environment. It surely <span className="hook-text">enhanced my debugging abilities!</span>
-            </Typography>
+              </Typography>
             </CardContent>
           </Collapse>
         </Card>
@@ -344,7 +344,7 @@ function About() {
               </Avatar>
             }
             title="Full Stack | APPerture"
-            subheaderTypographyProps={{ color:"white" }}
+            subheaderTypographyProps={{ color:'white' }}
             subheader="September 17th, 2020"
           />
           <CardMedia id="pFour"
@@ -353,22 +353,27 @@ function About() {
           />
           <CardContent>
             <div className="logo-container">
-            {gameProject4.map(icon => (
-              <div key={icon} className="tech-logo">
-                <SvgIcon
-                  width={22}
-                  height={22}
-                  icon={icon}
-                  primaryFill={'#41b4d3'}
-                  secondaryFill={'#ffffff'}
-                  backgroundFill={'#242323'}
-                />
-              </div>
-            ))}
+              {gameProject4.map(icon => (
+                <div key={icon} className="tech-logo">
+                  <SvgIcon
+                    width={22}
+                    height={22}
+                    icon={icon}
+                    primaryFill={'#41b4d3'}
+                    secondaryFill={'#ffffff'}
+                    backgroundFill={'#242323'}
+                  />
+                </div>
+              ))}
             </div>
           </CardContent>
           <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
+            <IconButton 
+              aria-label="add to favorites"
+              href="http://apperture-project.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LinkIcon className="link-icon" />
             </IconButton>
             <IconButton 
@@ -392,14 +397,14 @@ function About() {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
+              <Typography variant="body2" color="textSecondary" component="p">
               A <span className="hook-text">Full Stack</span> Project created in 7 days using <span className="hook-text">ReactJs</span> along with <span className="hook-text">Python & Django</span> Rest Framework.
               We had the choice to either do it individually or in group. Brenda Ty & I decided to grow our <span className="hook-text">pair coding</span> abilities in order to be exposed to the <span className="hook-text">market requriements.</span>
-              <br /><br />We also agreed to push ourselves using <span className="hook-text">React Hooks</span> which was conditional along with <span className="hook-text">Material UI.</span> With no previous experience or knowledge, we also decided to use <span className="hook-text">React-Spring</span> to render some <span className="hook-text">parallax</span> effects.
+                <br /><br />We also agreed to push ourselves using <span className="hook-text">React Hooks</span> which was conditional along with <span className="hook-text">Material UI.</span> With no previous experience or knowledge, we also decided to use <span className="hook-text">React-Spring</span> to render some <span className="hook-text">parallax</span> effects.
               Factorising it all to our project was such a challenge yet an <span className="hook-text">excellent learning curve.</span>
-              <br /><br />The mental satisfaction to <span className="hook-text">use technologies</span> we never used before was increadly <span className="hook-text">rewarding</span> for us & our <span className="hook-text">final product.</span> 
-              <span className="hook-text">APPerture</span> has been inspired by Instagram. Our application allows users to <span className="hook-text">created a profile and post</span> monochrome photographes. We created a one to many as well as many to many <span className="hook-text">relatioships</span> as the users have the abilities to <span className="hook-text">follow</span> each others, <span className="hook-text">leave comments & like.</span>
-            </Typography>
+                <br /><br />The mental satisfaction to <span className="hook-text">use technologies</span> we never used before was increadly <span className="hook-text">rewarding</span> for us & our <span className="hook-text">final product.</span> 
+                <span className="hook-text">APPerture</span> has been inspired by Instagram. Our application allows users to <span className="hook-text">created a profile and post</span> monochrome photographes. We created a one to many as well as many to many <span className="hook-text">relatioships</span> as the users have the abilities to <span className="hook-text">follow</span> each others, <span className="hook-text">leave comments & like.</span>
+              </Typography>
             </CardContent>
           </Collapse>
         </Card>
