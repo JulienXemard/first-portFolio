@@ -1,8 +1,11 @@
 #tech {
   background-color: black;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+
+  .projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
   .logo-container {
     display: flex;
@@ -18,9 +21,11 @@
     color: #41b4d3;
   }
 
-  .emailIcon {
-    background-color: black;
+  .contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 100px;
   }
-
 }
 

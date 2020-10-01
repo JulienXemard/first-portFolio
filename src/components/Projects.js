@@ -15,7 +15,6 @@ import Typography from '@material-ui/core/Typography'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import LinkIcon from '@material-ui/icons/Link'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import AlternateEmailIcon from '@material-ui/icons/AlternateEmail'
 import hoverEffect from 'hover-effect'
 import '../styles/main.scss'
 
@@ -24,6 +23,24 @@ const gameProject = ['JavaScript', 'GitHub', 'HTML', 'CSS', 'Heroku', 'VScode', 
 const gameProject2 = ['Node.js', 'JavaScript', 'React.js', 'HTML', 'CSS', 'bulma', 'npm', 'VScode']
 const gameProject3 = ['JavaScript', 'React.js', 'MongoDB', 'Node.js', 'Git', 'HTML', 'CSS', 'bulma', 'npm']
 const gameProject4 = ['Python', 'Django', 'Node.js', 'JavaScript', 'React.js', 'Git', 'trello', 'VScode', 'Heroku']
+
+const content = [
+  {
+    icon: 'email',
+    text: 'julien.xemard@outlook.com',
+    link: 'mailto:julien.xemard@outlook.com'
+  },
+  {
+    icon: 'linkedIn',
+    text: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/julienxemard/'
+  },
+  {
+    icon: 'github',
+    text: 'GitHub',
+    link: 'https://github.com/JulienXemard'
+  }
+]
 
 
 function About() {
@@ -123,8 +140,8 @@ function About() {
   }, [])
 
   return (
-    <>
-      <section className="section tech" id="tech">
+    <section className="section tech" id="tech">
+      <div className="projects">
         <Card className={classes.root}>
           <CardHeader
             avatar={
@@ -386,26 +403,26 @@ function About() {
             </CardContent>
           </Collapse>
         </Card>
-      </section>
-      <section id="contact-logo">
-        <IconButton 
-        className="contact-icon"
-        href="mailto:julien.xemard@outlook.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-          <AlternateEmailIcon className="emailIcon" fontSize="150px"/>
-        </IconButton>
-        <IconButton 
-          className="contact-icon"
-          href="mailto:julien.xemard@outlook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GitHubIcon className="GH-icon" fontSize="large"/>
-        </IconButton>
-      </section>
-    </>
+      </div>
+      <div className="contact">
+        {content.map(link => (
+          <div key={link.text} className="info-lines">
+            <a href={link.link} target="_blank">
+              <SvgIcon
+                width={40}
+                height={40}
+                icon={link.icon}
+                primaryFill={'#41b4d3'}
+                secondaryFill={'#242323'}
+                backgroundFill={'#242323'}
+              />
+              {/* <h3>{link.text}</h3> */}
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+
   )
 }
 
