@@ -305,7 +305,11 @@ function About() {
             </div>
           </CardContent>
           <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
+            <IconButton 
+              href="https://naluwave.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LinkIcon className="link-icon" />
             </IconButton>
             <IconButton 

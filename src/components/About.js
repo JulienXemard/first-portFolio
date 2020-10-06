@@ -23,8 +23,8 @@ function About() {
     ref.current = []
     set([])
     ref.current.push(setTimeout(() => set(['Bonjour', 'My name is', 'Julien']), 2000))
-    ref.current.push(setTimeout(() => set(['A Full Stack', 'Sofware Engineer']), 7000))
-    ref.current.push(setTimeout(() => set(['Julien Xemard', 'A Full Stack', 'Sofware Engineer']), 12000))
+    ref.current.push(setTimeout(() => set(['Full Stack', 'Sofware Engineer']), 7000))
+    ref.current.push(setTimeout(() => set(['Julien Xemard', 'Full Stack', 'Sofware Engineer']), 12000))
   }, [])
 
   useEffect(() => void reset(), [])
