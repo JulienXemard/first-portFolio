@@ -174,7 +174,11 @@ function About() {
             </div>
           </CardContent>
           <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
+            <IconButton 
+              href="https://julienxemard.github.io/gameProject/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LinkIcon className="link-icon" />
             </IconButton>
             <IconButton 
