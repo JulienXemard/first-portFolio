@@ -17,9 +17,9 @@ function Home() {
 
         <nav>
           <div className="nav-box">
-            <a onClick={() => parallax.scrollTo(0.45)}><h3>Technologies</h3></a>
-            <a onClick={() => parallax.scrollTo(1.25)}><h3>Projects</h3></a>
-            <a onClick={() => parallax.scrollTo(1.5)}><h3>Contact</h3></a>
+            <a onClick={() => parallax.scrollTo(0.50)}><h3>Technologies</h3></a>
+            <a onClick={() => parallax.scrollTo(1.52)}><h3>Projects</h3></a>
+            <a onClick={() => parallax.scrollTo(1.85)}><h3>Contact</h3></a>
           </div>
         </nav>
 
