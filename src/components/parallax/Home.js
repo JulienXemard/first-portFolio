@@ -37,7 +37,7 @@ function Home() {
           <Alive />
         </ParallaxLayer> */}
 
-        <ParallaxLayer offset={1.6} speed={2} style={{ pointerEvents: 'none' }}>
+        <ParallaxLayer offset={1.5} speed={3} style={{ pointerEvents: 'none' }}>
           <img src='https://i.ibb.co/qJ32QpS/GALogo.png' style={{ width: '12%', marginLeft: '45%' }} />
         </ParallaxLayer>
 
@@ -89,6 +89,50 @@ function Home() {
           <i className="icons devicon-mongodb-plain" style={{ display: 'block', marginLeft: '75%' }}></i>
           <i className="icons devicon-github-plain" style={{ display: 'block', marginLeft: '35%' }}></i>
           <i className="icons devicon-git-plain" style={{ display: 'block', marginLeft: '8%' }}></i>
+        </ParallaxLayer>
+        
+        <ParallaxLayer className="set-two" offset={1} speed={3.5} style={{ pointerEvents: 'none' }}>
+          <i className="icons  devicon-github-plain" style={{ display: 'block', marginLeft: '35%' }}></i>
+          <i className="icons  devicon-npm-original-wordmark" style={{ display: 'block', marginLeft: '85%' }}></i>
+          <i className="icons  devicon-javascript-plain" style={{ display: 'block', marginLeft: '10%' }}></i>
+          <i className="icons  devicon-heroku-original" style={{ display: 'block', marginLeft: '55%' }}></i>
+          <i className="icons  devicon-django-plain" style={{ display: 'block', marginLeft: '35%' }}></i>
+          <i className="icons  devicon-chrome-plain" style={{ display: 'block', marginLeft: '80%' }}></i>
+          <i className="icons  devicon-react-original" style={{ display: 'block', marginLeft: '60%' }}></i>
+          <i className="icons  devicon-html5-plain" style={{ display: 'block', marginLeft: '5%' }}></i>
+          <i className="icons  devicon-sass-original" style={{ display: 'block', marginLeft: '21%' }}></i>
+        </ParallaxLayer>
+
+        <ParallaxLayer className="set-two" offset={1.1} speed={2} style={{ pointerEvents: 'none' }}>
+          <i className="icons  devicon-nodejs-plain" style={{ display: 'block', marginLeft: '70%' }}></i>
+        </ParallaxLayer>
+
+        <ParallaxLayer className="set-two" offset={1.3} speed={2.5} style={{ pointerEvents: 'none' }}>
+          <i className="icons  devicon-git-plain" style={{ display: 'block', marginLeft: '40%' }}></i>
+          <i className="icons  devicon-mongodb-plain" style={{ display: 'block', marginLeft: '65%' }}></i>
+          <i className="icons  devicon-visualstudio-plain" style={{ display: 'block', marginLeft: '90%' }}></i>
+          <i className="icons  devicon-javascript-plain" style={{ display: 'block', marginLeft: '50%' }}></i>
+          <i className="icons  devicon-python-plain" style={{ display: 'block', marginLeft: '76%' }}></i>
+          <i className="icons  devicon-github-plain" style={{ display: 'block', marginLeft: '5%' }}></i>
+          <i className="icons  devicon-react-original" style={{ display: 'block', marginLeft: '25%' }}></i>
+        </ParallaxLayer>
+
+        <ParallaxLayer className="set-two" offset={1.7} speed={2.5} style={{ pointerEvents: 'none' }}>
+          <i className="icons  devicon-visualstudio-plain" style={{ display: 'block', marginLeft: '65%' }}></i>
+          <i className="icons  devicon-trello-plain" style={{ display: 'block', marginLeft: '50%' }}></i>
+          <i className="icons  devicon-typescript-plain" style={{ display: 'block', marginLeft: '32%' }}></i>
+        </ParallaxLayer>
+
+        <ParallaxLayer className="set-two" offset={1.75} speed={2.8} style={{ pointerEvents: 'none' }}>
+          <i className="icons  devicon-github-plain" style={{ display: 'block', marginLeft: '80%' }}></i>
+          <i className="icons  devicon-css3-plain" style={{ display: 'block', marginLeft: '5%' }}></i>
+          <i className="icons  devicon-nodejs-plain" style={{ display: 'block', marginLeft: '60%' }}></i>
+          <i className="icons  devicon-postgresql-plain" style={{ display: 'block', marginLeft: '90%' }}></i>
+          <i className="icons  devicon-slack-plain" style={{ display: 'block', marginLeft: '20%' }}></i>
+          <i className="icons  devicon-visualstudio-plain" style={{ display: 'block', marginLeft: '50%' }}></i>
+          <i className="icons  devicon-mongodb-plain" style={{ display: 'block', marginLeft: '75%' }}></i>
+          <i className="icons  devicon-github-plain" style={{ display: 'block', marginLeft: '35%' }}></i>
+          <i className="icons  devicon-git-plain" style={{ display: 'block', marginLeft: '8%' }}></i>
         </ParallaxLayer>
       </Parallax>
     </>

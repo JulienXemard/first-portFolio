@@ -30,8 +30,8 @@ $font-family: 'Nunito', serif;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1366px) {
-  .alive-mobile {
+@media only screen and (max-width: 820px) {
+  .set-two {
     display: none;
   }
 }
