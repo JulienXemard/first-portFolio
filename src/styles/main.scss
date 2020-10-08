@@ -36,7 +36,7 @@ $font-family: 'Nunito', serif;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 869px) {
   .mobile-logo-mid {
     display: none;
   }
@@ -46,5 +46,5 @@ $font-family: 'Nunito', serif;
 @import './icons';
 @import './about';
 @import './tech';
-@import './alive';
+// @import './alive';
 @import './projects';

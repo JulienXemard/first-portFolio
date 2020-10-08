@@ -2,7 +2,7 @@ import React from 'react'
 import About from '../About'
 import Technologies from '../Technologies'
 import Project from '../Projects'
-import Alive from './Alive'
+// import Alive from './Alive'
 import '../../styles/main.scss'
 
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <>
-      <Parallax pages={2.62} ref={ref => (parallax = ref)}>
+      <Parallax pages={3} ref={ref => (parallax = ref)}>
 
         <nav>
           <div className="nav-box">
@@ -23,7 +23,7 @@ function Home() {
           </div>
         </nav>
 
-        <ParallaxLayer offset={0.8} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }} />
+        {/* <ParallaxLayer offset={0.8} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }} /> */}
 
         <ParallaxLayer offset={0} speed={2}>
           <About />
@@ -33,21 +33,21 @@ function Home() {
           <Technologies />
         </ParallaxLayer>
 
-        <ParallaxLayer className="alive-mobile" offset={1} speed={3}>
+        {/* <ParallaxLayer className="alive-mobile" offset={1.3} speed={3}>
           <Alive />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
 
-        <ParallaxLayer offset={1.05} speed={3} style={{ pointerEvents: 'none' }}>
+        <ParallaxLayer offset={1.6} speed={2} style={{ pointerEvents: 'none' }}>
           <img src='https://i.ibb.co/qJ32QpS/GALogo.png' style={{ width: '12%', marginLeft: '45%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.4} speed={1}>
+        <ParallaxLayer offset={1.9} speed={1}>
           <Project />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.2} speed={3}>
+        {/* <ParallaxLayer offset={2.2} speed={3}>
           <span onClick={() => parallax.scrollTo(0)}>Click back Home</span>
-        </ParallaxLayer>
+        </ParallaxLayer> */}
 
         <ParallaxLayer offset={0.05} speed={3} style={{ pointerEvents: 'none' }}>
           <i className="icons devicon-github-plain" style={{ display: 'block', marginLeft: '35%' }}></i>

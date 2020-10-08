@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useSpring, animated } from 'react-spring'
+import React, { useEffect } from 'react'
+// import { useSpring, animated } from 'react-spring'
 import { SvgIcon } from './Icons'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
@@ -13,6 +13,7 @@ import Avatar from '@material-ui/core/Avatar'
 import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 import LinkIcon from '@material-ui/icons/Link'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import hoverEffect from 'hover-effect'
@@ -50,24 +51,27 @@ function About() {
       color: 'white',
       fontFamily: 'Nunito',
       maxWidth: 345,
+      [theme.breakpoints.down('md')]: {
+        maxWidth: 200
+      },
       backgroundColor: 'black',
       borderBlockStyle: '1px',
       borderColor: '#41b4d3'
     },
 
     icon: {
-      color: 'primary',
+      color: 'primary'
     },
 
     typography: {
       color: 'white',
-      fontFamily: 'Nunito',
+      fontFamily: 'Nunito'
     },
 
     media: {
       color: '#41b4d3',
       height: 400,
-      paddingTop: '0%',
+      paddingTop: '0%'
     },
 
     expand: {
@@ -75,26 +79,26 @@ function About() {
       transform: 'rotate(0deg)',
       marginLeft: 'auto',
       transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-      }),
+        duration: theme.transitions.duration.shortest
+      })
     },
 
     expandOpen: {
-      transform: 'rotate(180deg)',
+      transform: 'rotate(180deg)'
     },
 
     avatar: {
       color: 'black',
-      backgroundColor: '#41b4d3',
-    },
-
+      backgroundColor: '#41b4d3'
+    }
   }))
 
-  const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+
+  const classes = useStyles()
+  const [expanded, setExpanded] = React.useState(false)
 
   const handleExpandClick = () => {
-    setExpanded(!expanded);
+    setExpanded(!expanded)
   }
 
   useEffect(() => {
@@ -115,7 +119,7 @@ function About() {
       image2: 'https://i.imgur.com/6fXERmm.png',
       displacementImage: 'https://i.imgur.com/WtE8GdV.jpg',
       speedIn: 1.5,
-      speedOut: 1.5,
+      speedOut: 1.5
     })
 
     new hoverEffect({
@@ -125,7 +129,7 @@ function About() {
       image2: 'https://i.imgur.com/Do0oqjS.png',
       displacementImage: 'https://i.imgur.com/WtE8GdV.jpg',
       speedIn: 1.5,
-      speedOut: 1.5,
+      speedOut: 1.5
     })
 
     new hoverEffect({
@@ -135,7 +139,7 @@ function About() {
       image2: 'https://i.imgur.com/AtbKZVD.png',
       displacementImage: 'https://i.imgur.com/WtE8GdV.jpg',
       speedIn: 1.5,
-      speedOut: 1.5,
+      speedOut: 1.5
     })
   }, [])
 
@@ -150,7 +154,7 @@ function About() {
               </Avatar>
             }
             title="Project | X-Wing"
-            subheaderTypographyProps={{ color:'white' }}
+            subheaderTypographyProps={{ color: 'white' }}
             subheader="July 25th, 2020"
           />
           <CardMedia id="pOne"
@@ -191,7 +195,7 @@ function About() {
             </IconButton>
             <IconButton
               className={clsx(classes.expand, {
-                [classes.expandOpen]: expanded,
+                [classes.expandOpen]: expanded
               })}
               onClick={handleExpandClick}
               aria-expanded={expanded}
@@ -218,7 +222,7 @@ function About() {
               </Avatar>
             }
             title="Hackathon | APPi"
-            subheaderTypographyProps={{ color:'white' }}
+            subheaderTypographyProps={{ color: 'white' }}
             subheader="August 13th, 2020"
           />
           <CardMedia id="pTwo"
@@ -255,7 +259,7 @@ function About() {
             </IconButton>
             <IconButton
               className={clsx(classes.expand, {
-                [classes.expandOpen]: expanded,
+                [classes.expandOpen]: expanded
               })}
               onClick={handleExpandClick}
               aria-expanded={expanded}
@@ -285,7 +289,7 @@ function About() {
               </Avatar>
             }
             title="Full Stack | Nalu"
-            subheaderTypographyProps={{ color:'white' }}
+            subheaderTypographyProps={{ color: 'white' }}
             subheader="August 28th, 2020"
           />
           <CardMedia id="pThree"
@@ -326,7 +330,7 @@ function About() {
             </IconButton>
             <IconButton
               className={clsx(classes.expand, {
-                [classes.expandOpen]: expanded,
+                [classes.expandOpen]: expanded
               })}
               onClick={handleExpandClick}
               aria-expanded={expanded}
@@ -352,7 +356,7 @@ function About() {
               </Avatar>
             }
             title="Full Stack | APPerture"
-            subheaderTypographyProps={{ color:'white' }}
+            subheaderTypographyProps={{ color: 'white' }}
             subheader="September 17th, 2020"
           />
           <CardMedia id="pFour"
@@ -394,7 +398,7 @@ function About() {
             </IconButton>
             <IconButton
               className={clsx(classes.expand, {
-                [classes.expandOpen]: expanded,
+                [classes.expandOpen]: expanded
               })}
               onClick={handleExpandClick}
               aria-expanded={expanded}
