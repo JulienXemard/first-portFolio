@@ -13,7 +13,6 @@ import Avatar from '@material-ui/core/Avatar'
 import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
 import LinkIcon from '@material-ui/icons/Link'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import hoverEffect from 'hover-effect'
@@ -52,7 +51,7 @@ function About() {
       fontFamily: 'Nunito',
       maxWidth: 345,
       [theme.breakpoints.down('md')]: {
-        maxWidth: 200
+        maxWidth: 250
       },
       backgroundColor: 'black',
       borderBlockStyle: '1px',
