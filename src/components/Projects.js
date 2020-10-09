@@ -160,7 +160,7 @@ function About() {
             className={classes.media}
             title="Individual Game Project"
           />
-          <CardContent>
+          <CardContent className="logo-hidden">
             <div className="logo-container">
               {gameProject.map(icon => (
                 <div key={icon} className="tech-logo">

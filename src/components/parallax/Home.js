@@ -33,12 +33,12 @@ function Home() {
           <Technologies />
         </ParallaxLayer>
 
-        {/* <ParallaxLayer className="alive-mobile" offset={1.3} speed={3}>
+        {/* <ParallaxLayer className="alive-mobile" offset={2.5} speed={3}>
           <Alive />
         </ParallaxLayer> */}
 
         <ParallaxLayer offset={1.5} speed={3} style={{ pointerEvents: 'none' }}>
-          <img src='https://i.ibb.co/qJ32QpS/GALogo.png' style={{ width: '12%', marginLeft: '45%' }} />
+          <img src='https://i.ibb.co/qJ32QpS/GALogo.png' style={{ width: '10%', marginLeft: '45%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.9} speed={1}>
