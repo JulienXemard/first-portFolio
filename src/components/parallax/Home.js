@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <>
-      <Parallax pages={3} ref={ref => (parallax = ref)}>
+      <Parallax pages={3.12} ref={ref => (parallax = ref)}>
 
         <nav>
           <div className="nav-box">
