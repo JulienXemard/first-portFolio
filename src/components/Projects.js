@@ -213,73 +213,75 @@ function About() {
             </CardContent>
           </Collapse>
         </Card>
-        <Card className={classes.root}>
-          <CardHeader
-            avatar={
-              <Avatar aria-label="recipe" className={classes.avatar}>
-                2
-              </Avatar>
-            }
-            title="Hackathon | APPi"
-            subheaderTypographyProps={{ color: 'white' }}
-            subheader="August 13th, 2020"
-          />
-          <CardMedia id="pTwo"
-            className={classes.media}
-            title="API React Project"
-          />
-          <CardContent>
-            <div className="logo-container">
-              {gameProject2.map(icon => (
-                <div key={icon} className="tech-logo">
-                  <SvgIcon
-                    width={22}
-                    height={22}
-                    icon={icon}
-                    primaryFill={'#41b4d3'}
-                    secondaryFill={'#ffffff'}
-                    backgroundFill={'#242323'}
-                  />
-                </div>
-              ))}
-            </div>
-          </CardContent>
-          <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
-              <LinkIcon className="link-icon" />
-            </IconButton>
-            <IconButton 
-              aria-label="share"
-              href="https://github.com/JulienXemard/reactProject"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GitHubIcon className="GH-icon"/>
-            </IconButton>
-            <IconButton
-              className={clsx(classes.expand, {
-                [classes.expandOpen]: expanded
-              })}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <div className="mobile-hidden">
+          <Card className={classes.root}>
+            <CardHeader
+              avatar={
+                <Avatar aria-label="recipe" className={classes.avatar}>
+                  2
+                </Avatar>
+              }
+              title="Hackathon | APPi"
+              subheaderTypographyProps={{ color: 'white' }}
+              subheader="August 13th, 2020"
+            />
+            <CardMedia id="pTwo"
+              className={classes.media}
+              title="API React Project"
+            />
             <CardContent>
-              <Typography variant="body2" color="textSecondary" component="p">
-              The brief was 'simple': <span className="hook-text">Group of 2 & 48h</span> to create a ReactJS website using third party APIs. The App gives users all bike locations around is gealocation as well as weather & polution metrics.
-              An ambitious first <span className="hook-text">ReactJS</span> project as we linked our App to <span className="hook-text">4 APIs</span> which was an incredible team effort & an excellent <span className="hook-text">technical learning curve</span> given our experience & the timeframe<br /><br />
-              This <span className="hook-text">Hackathon</span> required a meticulous preparation in order to efficiently redistribute the tasks. 
-              This project gave an excellent introduction to <span className="hook-text">pair coding</span> & the necessity to communicate around clear deadlines to reach the project objectives.<br /><br />
-              Fortunately I met Brenda Ty, who has similar <span className="hook-text">working ethics</span> along with a crazy mentallity which positively spiced up this Hackathon.
-              The <span className="hook-text">logical challenges</span> aren't meant to be negative nor boring situations. It was up to us to transform these difficult moment into meliorative & fun ones which impacted our <span className="hook-text">productivity positively.</span>
-              </Typography>
+              <div className="logo-container">
+                {gameProject2.map(icon => (
+                  <div key={icon} className="tech-logo">
+                    <SvgIcon
+                      width={22}
+                      height={22}
+                      icon={icon}
+                      primaryFill={'#41b4d3'}
+                      secondaryFill={'#ffffff'}
+                      backgroundFill={'#242323'}
+                    />
+                  </div>
+                ))}
+              </div>
             </CardContent>
-          </Collapse>
-        </Card>
+            <CardActions disableSpacing>
+              <IconButton aria-label="add to favorites">
+                <LinkIcon className="link-icon" />
+              </IconButton>
+              <IconButton 
+                aria-label="share"
+                href="https://github.com/JulienXemard/reactProject"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon className="GH-icon"/>
+              </IconButton>
+              <IconButton
+                className={clsx(classes.expand, {
+                  [classes.expandOpen]: expanded
+                })}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="show more"
+              >
+                <ExpandMoreIcon />
+              </IconButton>
+            </CardActions>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <CardContent>
+                <Typography variant="body2" color="textSecondary" component="p">
+                The brief was 'simple': <span className="hook-text">Group of 2 & 48h</span> to create a ReactJS website using third party APIs. The App gives users all bike locations around is gealocation as well as weather & polution metrics.
+                An ambitious first <span className="hook-text">ReactJS</span> project as we linked our App to <span className="hook-text">4 APIs</span> which was an incredible team effort & an excellent <span className="hook-text">technical learning curve</span> given our experience & the timeframe<br /><br />
+                This <span className="hook-text">Hackathon</span> required a meticulous preparation in order to efficiently redistribute the tasks. 
+                This project gave an excellent introduction to <span className="hook-text">pair coding</span> & the necessity to communicate around clear deadlines to reach the project objectives.<br /><br />
+                Fortunately I met Brenda Ty, who has similar <span className="hook-text">working ethics</span> along with a crazy mentallity which positively spiced up this Hackathon.
+                The <span className="hook-text">logical challenges</span> aren't meant to be negative nor boring situations. It was up to us to transform these difficult moment into meliorative & fun ones which impacted our <span className="hook-text">productivity positively.</span>
+                </Typography>
+              </CardContent>
+            </Collapse>
+          </Card>
+        </div>
         <Card className={classes.root}>
           <CardHeader
             avatar={

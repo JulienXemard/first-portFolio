@@ -33,4 +33,8 @@
   }
 }
 
-
+@media only screen and (max-width: 1300px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
