@@ -56,6 +56,9 @@ function Home() {
           <i className="icons devicon-chrome-plain" style={{ display: 'block', marginLeft: '80%' }}></i>
           <i className="icons devicon-react-original" style={{ display: 'block', marginLeft: '60%' }}></i>
           <i className="icons devicon-html5-plain" style={{ display: 'block', marginLeft: '5%' }}></i>
+        </ParallaxLayer>
+
+        <ParallaxLayer className="mobile-logo-mid" offset={0.27} speed={3} style={{ pointerEvents: 'none' }}>
           <i className="icons devicon-sass-original" style={{ display: 'block', marginLeft: '21%' }}></i>
         </ParallaxLayer>
 
