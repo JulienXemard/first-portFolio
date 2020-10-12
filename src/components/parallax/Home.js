@@ -43,9 +43,9 @@ function Home() {
           <Alive />
         </ParallaxLayer> */}
 
-        <ParallaxLayer offset={2.2} speed={2}>
+        {/* <ParallaxLayer offset={2.2} speed={2}>
           <span onClick={() => parallax.scrollTo(0)}>Click back Home</span>
-        </ParallaxLayer>
+        </ParallaxLayer> */}
 
         <ParallaxLayer offset={0.05} speed={3} style={{ pointerEvents: 'none' }}>
           <i className="icons devicon-github-plain" style={{ display: 'block', marginLeft: '35%' }}></i>
