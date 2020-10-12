@@ -5,7 +5,7 @@ import Project from '../Projects'
 // import Alive from './Alive'
 import '../../styles/main.scss'
 
-import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
 let parallax = null
 
@@ -23,8 +23,6 @@ function Home() {
           </div>
         </nav>
 
-        {/* <ParallaxLayer offset={0.8} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }} /> */}
-
         <ParallaxLayer offset={0} speed={2}>
           <About />
         </ParallaxLayer>
@@ -32,10 +30,6 @@ function Home() {
         <ParallaxLayer offset={0.88} speed={1} style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
           <Technologies />
         </ParallaxLayer>
-
-        {/* <ParallaxLayer className="alive-mobile" offset={2.5} speed={3}>
-          <Alive />
-        </ParallaxLayer> */}
 
         <ParallaxLayer offset={1.5} speed={3} style={{ pointerEvents: 'none' }}>
           <img src='https://i.ibb.co/qJ32QpS/GALogo.png' style={{ width: '10%', marginLeft: '45%' }} />
@@ -45,9 +39,13 @@ function Home() {
           <Project />
         </ParallaxLayer>
 
-        {/* <ParallaxLayer offset={2.2} speed={3}>
-          <span onClick={() => parallax.scrollTo(0)}>Click back Home</span>
+        {/* <ParallaxLayer className="alive-mobile" offset={3} speed={3}>
+          <Alive />
         </ParallaxLayer> */}
+
+        <ParallaxLayer offset={2.2} speed={2}>
+          <span onClick={() => parallax.scrollTo(0)}>Click back Home</span>
+        </ParallaxLayer>
 
         <ParallaxLayer offset={0.05} speed={3} style={{ pointerEvents: 'none' }}>
           <i className="icons devicon-github-plain" style={{ display: 'block', marginLeft: '35%' }}></i>

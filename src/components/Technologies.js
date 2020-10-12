@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring'
 import { SvgIcon } from './Icons'
 import '../styles/main.scss'
 
-const technicalSkills = ['Node.js', 'JavaScript', 'React.js', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'trello', 'HTML', 'CSS', 'bulma', 'npm', 'Heroku', 'VScode']
+const technicalSkills = ['Node.js', 'JavaScript', 'React.js', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'VScode', 'HTML', 'CSS', 'bulma', 'npm', 'Heroku', 'trello']
 
 const currentlyLearning = ['Python', 'Django', 'TypeScript', 'Netlify']
 
