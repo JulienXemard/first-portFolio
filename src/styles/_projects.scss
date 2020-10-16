@@ -25,6 +25,10 @@
     color: #41b4d3;
   }
 
+  #tech > div.projects > div:nth-child(3) > div.MuiCardActions-root > button > span.MuiIconButton-label > svg {
+    color: white;
+  }
+
   .contact {
     display: flex;
     justify-content: space-evenly;

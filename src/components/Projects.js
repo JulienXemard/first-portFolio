@@ -74,7 +74,7 @@ function About() {
     },
 
     expand: {
-      color: '#41b4d3',
+      color: 'white',
       transform: 'rotate(0deg)',
       marginLeft: 'auto',
       transition: theme.transitions.create('transform', {
@@ -94,7 +94,7 @@ function About() {
 
 
   const classes = useStyles()
-  const [expanded, setExpanded] = React.useState(false)
+  const [expanded, setExpanded] = React.useState(true)
 
   const handleExpandClick = () => {
     setExpanded(!expanded)
